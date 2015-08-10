@@ -1,0 +1,35 @@
+template(name='findTheLetter')
+  .section: .container
+    .the-letters
+      .row
+        .col.s4.center
+          +letter2
+        .col.s4.center
+          +letter2
+        .col.s4.center
+          +letter2
+      .spacer(style='height:2em;')
+      .row
+        .col.s4.center
+          +letter2
+        .col.s4.center
+          +letter2
+        .col.s4.center
+          +letter2
+      .spacer(style='height:2em;')        
+                        
+      .spacer(style='height:2em;')
+      .row
+        .center
+          button.hear-again.btn.waves-effect.grey hear the target again ...
+    
+    .center.intro-message
+      h1 listen carefully ... can you find this letter?
+
+    .center.success-message
+      h1 Bravo! Du hast es geschafft!
+        
+    
+template(name="letter2")
+  button.letter.btn-large.waves-effect.waves-light.grey.darken-2(style='font-size:200%;') #{get_letter}
+

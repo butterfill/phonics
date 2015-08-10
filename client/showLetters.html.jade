@@ -1,0 +1,45 @@
+template(name='showLetters')
+  .section: .container
+    .row
+      .col.s4.center
+        +letter
+      .col.s4.center
+        +letter
+      .col.s4.center
+        +letter
+    .spacer(style='height:2em;')
+    .row
+      .col.s4.center
+        +letter
+      .col.s4.center
+        +letter
+      .col.s4.center
+        +letter
+    .spacer(style='height:2em;')
+    .row
+      .col.s4.center
+        +letter
+      .col.s4.center
+        +letter
+      .col.s4.center
+        +letter
+    .spacer(style='height:2em;')
+    .row
+      .col.s4.center
+        +letter
+      .col.s4.center
+        +letter
+      .col.s4.center
+        +letter
+    .spacer(style='height:2em;')
+    .row
+      .center
+        button.fewer-letters.btn.waves-effect.grey -
+        button.new-letters.btn.waves-effect.grey new letters ...
+        button.more-letters.btn.waves-effect.grey +
+    
+    
+
+template(name="letter")
+  button.letter.btn-large.waves-effect.waves-light.grey.darken-2(style='font-size:200%;') 
+  

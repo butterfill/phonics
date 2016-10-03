@@ -34,6 +34,7 @@
 
   // Configure environment
   "env": {
+	"PORT" : "3000",
     "ROOT_URL": "http://phonics.butterfill.com"
   },
 
